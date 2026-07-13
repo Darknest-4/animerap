@@ -10025,4 +10025,207 @@ span.success:after {
     color: #fff;
 }
 
+/* ==========================================================================
+   Reszponzivitás
+   ========================================================================== */
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+#header img.header_img {
+    object-fit: cover;
+}
+/* A korábban inline stílusú elemek (index.html) */
+.project-state-list {
+    display: inline-block;
+    width: calc(100% - 250px);
+    vertical-align: top;
+}
+.welcome-box {
+    display: inline-block;
+    float: right;
+    right: 20px;
+    padding: 15px;
+    width: 400px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+    text-align: justify;
+}
+
+/* Kis desktop / nagy tablet: a fix 1302px-es keret a képernyőhöz igazodik */
+@media (max-width: 1360px) {
+    #content {
+        width: 100%;
+    }
+    #menu {
+        height: auto;
+        min-height: 50px;
+    }
+    #menu ul.m {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    #menu ul.m li {
+        float: none;
+    }
+}
+
+/* Projekt oldal infó blokkja: a screenshot sáv új sorba kerül */
+@media (max-width: 1100px) {
+    #project .info {
+        flex-wrap: wrap;
+    }
+    #project .info .screens {
+        width: 100%;
+        margin-top: 5px;
+        height: 300px !important; /* a JS inline magasságát is felülírja */
+    }
+    #project .info .screens div {
+        height: 100% !important;
+    }
+}
+
+/* Tablet: a két hasáb egymás alá kerül (előbb a hírek, utána az oldalsáv) */
+@media (max-width: 1000px) {
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+    #rightSection {
+        order: 1;
+    }
+    #leftSection {
+        order: 2;
+    }
+    #leftSection,
+    #rightSection {
+        width: 100%;
+        float: none;
+        min-height: 0;
+    }
+    #leftSection {
+        box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.5);
+    }
+    ul.chat:not(.comments) {
+        min-height: 0;
+        max-height: 500px;
+    }
+    .project-state-list {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #topSection div._title2 {
+        display: block;
+        float: none;
+        width: 100%;
+        transform: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobil */
+@media (max-width: 800px) {
+    #header {
+        height: 150px;
+    }
+    #header img.logo {
+        height: 120px;
+    }
+    #menu ul.m {
+        font-size: 1.1em;
+    }
+    #rightSection {
+        padding: 10px;
+    }
+    .news {
+        width: calc(100% - 6px);
+        height: auto;
+    }
+    .news .footer {
+        position: static;
+    }
+    .news-slider {
+        width: 100%;
+    }
+    .welcome-box {
+        float: none;
+        right: 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .news2 .body {
+        padding: 25px 10px 0;
+    }
+    .news2 .footer p {
+        padding: 0 10px;
+    }
+    #project .info .cover,
+    #project .info ul {
+        width: 100%;
+        margin: 0 0 5px;
+    }
+    #project ul.links {
+        flex-wrap: wrap;
+    }
+    #project iframe {
+        max-width: 100%;
+    }
+    #private-messages ul.messages {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .projekt-episodes,
+    .preview,
+    .description,
+    .characters,
+    .connections {
+        overflow-x: auto;
+    }
+}
+
+/* Kis mobil */
+@media (max-width: 480px) {
+    #header {
+        height: 110px;
+    }
+    #header img.logo {
+        height: 90px;
+    }
+    #menu ul.m {
+        font-size: 1em;
+    }
+    #menu ul.m li a {
+        padding: 0 0.5em;
+    }
+    #login input[type="password"],
+    #login input[type="text"] {
+        width: 170px;
+    }
+    .news .title {
+        font-size: 1.1em;
+    }
+    .news-slider .text-content {
+        width: 40%;
+    }
+    .news-slider .image-content img {
+        width: 60vw;
+        max-width: 250px;
+        height: auto;
+    }
+    .project-state {
+        width: 130px;
+    }
+    .project-state img {
+        max-width: 125px;
+        height: 175px;
+    }
+}
+
 
