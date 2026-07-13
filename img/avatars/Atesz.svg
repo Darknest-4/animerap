@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+<defs><radialGradient id="g" cx="0.35" cy="0.3" r="1"><stop offset="0" stop-color="hsl(292,75%,62%)"/><stop offset="1" stop-color="hsl(252,60%,30%)"/></radialGradient></defs>
+<circle cx="64" cy="64" r="62" fill="url(#g)"/>
+<circle cx="64" cy="64" r="59" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+<circle cx="42" cy="34" r="3" fill="#fff" opacity="0.8"/>
+<circle cx="96" cy="88" r="2.2" fill="#fff" opacity="0.6"/>
+<text x="64" y="66" dominant-baseline="central" text-anchor="middle" font-family="Verdana,Geneva,sans-serif" font-weight="bold" font-size="58" fill="#fff" paint-order="stroke" stroke="rgba(0,0,0,0.25)" stroke-width="3">A</text>
+</svg>
