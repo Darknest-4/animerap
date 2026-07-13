@@ -10190,6 +10190,55 @@ html {
     }
 }
 
+/* Projektlista és projekt adatlap */
+@media (max-width: 800px) {
+    .animesBox {
+        width: 100%;
+    }
+    .animesBox .item {
+        width: 100%;
+        max-width: 330px;
+        margin: 10px auto;
+        display: block;
+    }
+    .animesBox .item .title {
+        width: 100%;
+        display: block;
+        padding: 8px 10px;
+    }
+    .animesBox .item .body p {
+        flex: 1;
+        width: auto;
+    }
+    #project .characters > div {
+        width: 49% !important;
+    }
+}
+@media (max-width: 600px) {
+    .episode {
+        flex-wrap: wrap;
+    }
+    .e-left-container,
+    .e-mid-container {
+        flex: 1 1 100%;
+    }
+    .e-right-container {
+        margin: 10px auto 0;
+        height: auto;
+    }
+    .episode img {
+        height: auto;
+        max-width: calc(100% - 20px);
+    }
+    .episode-download {
+        align-self: flex-start;
+        margin: 8px 0 0;
+    }
+    #project .characters > div {
+        width: 100% !important;
+    }
+}
+
 /* Kis mobil */
 @media (max-width: 480px) {
     #header {
